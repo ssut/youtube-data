@@ -1,0 +1,28 @@
+language: node_js
+node_js:
+  - 12
+
+cache:
+  directories:
+    - node_modules
+
+script:
+  - npm run build
+
+after_success:
+  - npm pack
+
+deploy:
+  - provider: releases
+    api_key: $GITHUB_TOKEN
+    file_glob: true
+    file: "youtube-data-*.tgz"
+    skip_cleanup: true
+    on:
+      tags: true
+  - provider: npm
+    skip_cleanup: true
+    email: "ssut@ssut.me"
+    api_key: $NPM_TOKEN
+    on:
+      tags: true

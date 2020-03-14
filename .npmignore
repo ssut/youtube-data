@@ -1,0 +1,11 @@
+tsconfig.json
+.travis.yml
+.editorconfig
+.nojekyll
+dev/
+docs/
+src/
+.npmignore
+
+// npm pack
+youtube-data-*.tgz
