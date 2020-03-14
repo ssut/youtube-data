@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tsc -p tsconfig.build.json"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ssut/youtube-data.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Suhun Han (ssut)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ssut/youtube-data/issues"
