@@ -1,4 +1,8 @@
-# YouTube Data
+# YouTube Web Data
+
+```bash
+$ npm install youtube-web-data
+```
 
 This is a client project for parsing simple YouTube data from web page, m.youtube.com, which are not able to get via the official YouTube Data API.
 
